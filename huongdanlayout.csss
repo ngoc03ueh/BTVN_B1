@@ -1,0 +1,56 @@
+
+*{padding: 0;
+margin: 0;}
+
+
+.item{ 
+    background-color: rgb(227, 215, 250);
+    /* border: 1px solid rgb(54, 61, 255); */
+
+    /* nếu phần tử iteam đã được khai báo sẽ ưu tiên định dang phần tử item thay 
+    vì định dạng cả grid */
+    /* min-height:  100px ; */
+
+}
+.container{ height: 100vh;
+    display: grid;
+    grid-template-rows: 3fr 1fr  6fr 1fr;
+    grid-template-columns: 1fr 4.5fr;
+    /* grid-template-columns: 100px 300px 400px;  */
+/* grid-template-columns: 1fr 1fr 1fr; chia theo tỉ lệ của grid */
+/* grid-template-columns: repeat(4, 1fr 2fr);  */
+/* grid-template-columns: repeat(3, 1fr);  */
+
+/* chia làm 4 đoạn bằng nhau tỉ lệ cuẩ grid */
+
+    /* grid-template-rows: 100px 200px 100px; */
+    /* set độ rộng của hàng tự động */
+     /* grid-auto-rows: 200px ; */
+     /* set độ rộng cố định nhưng nếu phần tử dài hơn sẽ tự điều chỉnh  */
+     /* grid-auto-rows: minmax(30px,auto) ; */
+
+     grid-template-areas: 
+     "aa aa"
+     "bb bb"
+     "cc dd"
+     "ee ee"
+     ;
+
+}
+.item1{grid-area: aa; background-color:rgb(143,172,225) ;}
+.item2{grid-area:bb; background-color: rgb(255,0,0);}
+.item3{grid-area:cc; background-color:rgb(255,192,0) ;}
+
+.item4 {grid-area:dd; background-color:rgb(192,255,77) ;
+    /* cách 1  */
+    /* grid-column-start: 1;
+    grid-column-end: 3;
+     
+    grid-row-start: 2;
+    grid-row-end: 4; */
+    /* cách 2 
+     grid-column: 1/3;
+     grid-row: 2/5; */
+
+}
+.item5{grid-area:ee; background-color: rgb(0,112,192);}

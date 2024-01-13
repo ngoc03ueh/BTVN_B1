@@ -1,0 +1,103 @@
+
+*{padding: 0;
+margin: 0;}
+
+
+
+.layout1{ height: 100vh;
+    display: grid;
+    grid-template-rows: 3fr 1fr  6fr 1fr;
+    grid-template-columns: 1fr 4.5fr;
+    margin-bottom: 30px;
+    /* grid-template-columns: 100px 300px 400px;  */
+/* grid-template-columns: 1fr 1fr 1fr; chia theo tỉ lệ của grid */
+/* grid-template-columns: repeat(4, 1fr 2fr);  */
+/* grid-template-columns: repeat(3, 1fr);  */
+
+/* chia làm 4 đoạn bằng nhau tỉ lệ cuẩ grid */
+
+    /* grid-template-rows: 100px 200px 100px; */
+    /* set độ rộng của hàng tự động */
+     /* grid-auto-rows: 200px ; */
+     /* set độ rộng cố định nhưng nếu phần tử dài hơn sẽ tự điều chỉnh  */
+     /* grid-auto-rows: minmax(30px,auto) ; */
+
+     grid-template-areas: 
+     "aa aa"
+     "bb bb"
+     "cc dd"
+     "ee ee"
+     ;
+     .item1{grid-area: aa; background-color:rgb(143,172,225) ;}
+.item2{grid-area:bb; background-color: rgb(255,0,0);}
+.item3{grid-area:cc; background-color:rgb(255,192,0) ;}
+
+.item4 {grid-area:dd; background-color:rgb(192,255,77) ;}
+.item5{grid-area:ee; background-color: rgb(0,112,192);}
+
+
+}
+
+.layout2{ height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 3fr  6fr 1fr;
+    grid-template-columns: 4.5fr 1fr;
+     grid-template-areas: 
+     "aa aa"
+     "bb bb"
+     "cc dd"
+     "ee ee"
+     ;
+     .item1{grid-area: aa; background-color:rgb(143,172,225) ;}
+.item2{grid-area:bb; background-color: rgb(255,0,0);}
+.item3{grid-area:cc; background-color:rgb(255,192,0) ;}
+
+.item4 {grid-area:dd; background-color:rgb(192,255,77) ;}
+.item5{grid-area:ee; background-color: rgb(0,112,192);}
+
+
+}
+
+.layout3 { height: 100vh;
+    display: grid;
+    grid-template-rows: 2fr 1fr  3fr 3fr 4fr 2fr;
+    grid-template-columns: 1fr 2fr 1.5fr ;
+     grid-template-areas: 
+     "aa aa aa"
+     "xx xx xx"
+     "bb bb cc"
+     "bb bb dd"
+     "ee gg gg"
+     "hh hh hh";
+     .item1{grid-area: aa; background-color:rgb(143,172,225) ;}
+     .item2{grid-area:xx; background-color: rgb(255,0,0);}
+     .item3{grid-area:bb; background-color:rgb(0,112,192) ;}
+     .item4 {grid-area:cc; background-color:rgb(156, 215, 224) ;}
+     .item5{grid-area:dd; background-color: rgb(118, 9, 168);}
+     .item6{grid-area:ee; background-color:rgb(255,192,0) ;}
+     .item7 {grid-area:gg; background-color:rgb(192,255,77) ;}
+     .item8{grid-area:hh; background-color: rgb(0,112,192);}
+}
+.layout4 { height: 100vh;
+    display: grid;
+    grid-template-rows: 2fr 1fr 2fr 2fr 4fr 3fr 2fr;
+    grid-template-columns: 1fr 2fr 1fr ;
+     grid-template-areas: 
+     "aa aa aa"
+     "xx xx xx"
+     "bb cc dd"
+     "bb cc ee"
+     "mm gg gg"
+     "hh gg gg"
+     "ff ff ff" ;
+     .item1{grid-area: aa; background-color:rgb(143,172,225) ;}
+     .item2{grid-area:xx; background-color: rgb(255,0,0);}
+     .item3{grid-area:bb; background-color:rgb(0,112,192) ;}
+     .item4 {grid-area:cc; background-color:rgb(39, 96, 253) ;}
+     .item5{grid-area:dd; background-color: rgb(118, 9, 168);}
+     .item6{grid-area:ee; background-color:rgb(255,192,0) ;}
+     .item7 {grid-area:mm; background-color:rgb(192,255,77) ;}
+     .item8{grid-area:hh; background-color: rgb(148, 235, 255);}
+     .item9 {grid-area:gg; background-color:rgb(77, 228, 255) ;}
+     .item10{grid-area:ff; background-color: rgb(0,112,192);}
+}
